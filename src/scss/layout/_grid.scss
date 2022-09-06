@@ -1,0 +1,34 @@
+.grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+
+	width: unquote("min(100% - 40px,1440px)");
+	margin-inline: auto;
+	margin-top: 6rem;
+	justify-content: center;
+
+	@media (min-width: 1024px) {
+		grid-template-columns: 503px 380px;
+		grid-template-rows: auto;
+		gap: 5.9375rem;
+	}
+
+	&__img {
+		&__picture {
+			width: 100%;
+			height: 330px;
+		}
+	}
+
+	&__info {
+		margin-top: 2.5rem;
+		&__title {
+			font-size: 2.625rem;
+		}
+		&__text {
+			font-size: 1rem;
+			margin: 1.5rem 0 2rem;
+		}
+	}
+}

@@ -24,7 +24,46 @@
 		<link rel="stylesheet" href="./dist/main.css" />
 	</head>
 	<body>
-		<h2>hello</h2>
+		<article>
+			<div class="grid">
+				<picture class="grid__img">
+					<source
+						srcset="
+							./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_1002.jpg
+						"
+						media="(min-width:1025px)"
+					/>
+					<source
+						srcset="
+							./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_784.jpg
+						"
+						media="(min-width: 768px)"
+					/>
+
+					<img
+						src="./images/sean-o-KMn4VEeEPR8-unsplash_1_s6zmfh_c_scale,w_480.jpg"
+						alt="The Beach"
+						class="grid__img__picture"
+					/>
+				</picture>
+				<div class="grid__info">
+					<h2 class="grid__info__title">Lorem Ipsum</h2>
+					<p class="grid__info__text">
+						Infinitely scalable, feature-rich and cloud-native data management
+						and protection for modern and legacy infrastructures and SaaS
+						platforms, managed via a single app with no hardware required.
+					</p>
+					<button
+						aria-label="More about The Beach"
+						aria-expanded="false"
+						type="button"
+						class="btn"
+					>
+						Button
+					</button>
+				</div>
+			</div>
+		</article>
 		<script type="text/javascript" src="./dist/all.js"></script>
 	</body>
 </html>
