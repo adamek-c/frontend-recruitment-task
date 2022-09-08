@@ -1,7 +1,7 @@
 .btn {
-	font-size: 1rem;
+	font-size: 0.875rem;
 	border-radius: 2rem;
-	padding: 1rem 2.5rem;
+	padding: 0.875rem 2rem;
 	cursor: pointer;
 	color: $white-color;
 	background-color: $bg-color;
@@ -10,5 +10,10 @@
 
 	&:hover {
 		background-color: darken($color: $bg-color, $amount: 10%);
+	}
+
+	@include mq(medium) {
+		font-size: 1rem;
+		padding: 1rem 2.5rem;
 	}
 }
