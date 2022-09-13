@@ -4,6 +4,7 @@
 	width: 100%;
 	min-height: 100vh;
 	background-color: $bg-overlay;
+	display: none;
 
 	&__container {
 		margin-inline: auto;
@@ -29,13 +30,18 @@
 			top: 2.875rem;
 			right: 2.875rem;
 			cursor: pointer;
+			width: 0.75rem;
+			height: 0.75rem;
+			border: 0.0625rem solid transparent;
+			display: flex;
+			justify-content: center;
+			align-items: center;
 
 			&__line {
 				width: 0.75rem;
 				height: 0.125rem;
 				background-color: $black;
 				position: absolute;
-
 				&--one {
 					transform: rotate(-45deg);
 				}
@@ -86,4 +92,8 @@
 			}
 		}
 	}
+}
+
+.show {
+	display: block;
 }
