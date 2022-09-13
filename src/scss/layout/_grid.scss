@@ -8,7 +8,6 @@
 	margin-top: 6em;
 	justify-content: center;
 	justify-items: center;
-	z-index: 10;
 
 	@include mq(large) {
 		grid-template-columns: 31.4375em 23.75em;
@@ -27,6 +26,7 @@
 		@include mq(medium) {
 			margin-top: 2.5em;
 		}
+
 		&__text {
 			margin-block: 1.2rem 1.8rem;
 
