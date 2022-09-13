@@ -1,0 +1,89 @@
+.popup {
+	position: absolute;
+	inset: 0;
+	width: 100%;
+	min-height: 100vh;
+	background-color: $bg-overlay;
+
+	&__container {
+		margin-inline: auto;
+		width: 100%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__info {
+		width: unquote("min(100% - 2.5em,57.5em)");
+		background-color: $white-color;
+		padding: 2.5rem;
+		position: relative;
+
+		@include mq(medium) {
+			padding: 3.5rem 0 3.5rem 5.9375rem;
+		}
+
+		&__btn {
+			position: absolute;
+			top: 2.875rem;
+			right: 2.875rem;
+			cursor: pointer;
+
+			&__line {
+				width: 0.75rem;
+				height: 0.125rem;
+				background-color: $black;
+				position: absolute;
+
+				&--one {
+					transform: rotate(-45deg);
+				}
+				&--two {
+					transform: rotate(45deg);
+				}
+			}
+		}
+
+		&__text {
+			margin-top: 1rem;
+
+			@include mq(medium) {
+				margin-top: 1.5rem;
+				display: flex;
+			}
+		}
+
+		&__resetbtn {
+			background-color: inherit;
+			cursor: pointer;
+			font-size: 1rem;
+			border: none;
+			text-transform: uppercase;
+			position: relative;
+			color: $primary-color;
+			margin-top: 1rem;
+			display: none;
+
+			@include mq(medium) {
+				margin-top: 0;
+				margin-left: 1rem;
+			}
+
+			&::after {
+				position: absolute;
+				content: "";
+				width: 100%;
+				height: 0.125rem;
+				background-color: $primary-color;
+				bottom: 0;
+				left: 0;
+				display: none;
+			}
+
+			&:hover::after {
+				display: block;
+			}
+		}
+	}
+}

@@ -1,13 +1,22 @@
-h2 {
+h2,
+p {
 	margin-top: 0;
-	line-height: 1.2;
+}
+
+h2,
+button {
 	font-weight: $fw-700;
 }
 
+h2 {
+	line-height: 1.2;
+	font-size: clamp(1.5rem, 4vw, 2.625rem);
+}
+
 p {
-	margin-top: 0;
 	line-height: 1.5;
 	font-weight: $fw-300;
+	font-size: clamp(0.94rem, 2vw, 1rem);
 }
 
 span {
@@ -15,6 +24,5 @@ span {
 }
 
 button {
-	font-weight: $fw-700;
 	line-height: 1;
 }

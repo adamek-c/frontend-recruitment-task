@@ -3,11 +3,12 @@
 	grid-template-columns: minmax(auto, 30em);
 	grid-template-rows: auto auto;
 
-	width: unquote("min(100% - 40px,1440px)");
+	width: unquote("min(100% - 2.5em,90em)");
 	margin-inline: auto;
 	margin-top: 6em;
 	justify-content: center;
 	justify-items: center;
+	z-index: 10;
 
 	@include mq(large) {
 		grid-template-columns: 31.4375em 23.75em;
@@ -26,12 +27,7 @@
 		@include mq(medium) {
 			margin-top: 2.5em;
 		}
-
-		&__title {
-			font-size: clamp(1.5rem, 4vw, 2.625rem);
-		}
 		&__text {
-			font-size: clamp(0.94rem, 2vw, 1rem);
 			margin-block: 1.2rem 1.8rem;
 
 			@include mq(medium) {

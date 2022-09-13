@@ -47,7 +47,7 @@
 					/>
 				</picture>
 				<div class="grid__info">
-					<h2 class="grid__info__title">Lorem Ipsum</h2>
+					<h2>Lorem Ipsum</h2>
 					<p class="grid__info__text">
 						Infinitely scalable, feature-rich and cloud-native data management
 						and protection for modern and legacy infrastructures and SaaS
@@ -64,6 +64,37 @@
 				</div>
 			</div>
 		</article>
-		<script type="text/javascript" src="./dist/all.js"></script>
+		<section>
+			<div class="popup" id="popup">
+				<div class="popup__container">
+					<div class="popup__info">
+						<div class="popup__info__btn" aria-label="Close alert">
+							<div
+								class="popup__info__btn__line popup__info__btn__line--one"
+							></div>
+							<div
+								class="popup__info__btn__line popup__info__btn__line--two"
+							></div>
+						</div>
+						<h2>Alert!</h2>
+						<div class="popup__info__text">
+							<p>
+								You have clicked
+								<span><span id="count"></span><span> times</span></span>
+								related button
+							</p>
+							<button
+								aria-label="Reset clicks"
+								class="popup__info__resetbtn"
+								type="button"
+							>
+								reset
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="./dist/all.js"></script>
 	</body>
 </html>

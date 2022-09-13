@@ -1,7 +1,10 @@
 $breakpoints: (
+	// 480px
 	"small": 30em,
+	// 720px
 	"medium": 45em,
-	"large": 64em,
+	// 1024px
+	"large": 64em
 );
 
 @mixin mq($size) {
